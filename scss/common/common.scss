@@ -1,0 +1,34 @@
+body{
+  $content-width:1280px;
+  $default-font:'Circular', regular;
+  $default-size: medium;
+  $default-weight:medium;
+
+}
+.container{
+  max-width: 1280px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width $breakpoint_xxl ){
+.container{
+  max-width:$breakpoint_md;
+}
+}
+@media (max-width $breakpoint_md){
+  .container{
+    max-width:$breakpoint_sm;
+  }
+}
+@media (max-width $breakpoint_sm){
+  .container{
+    max-width:$breakpoint_xs;
+  }
+}
